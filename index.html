@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <a href="#" class="logo">LOGO</a>
+      <div class="iconHolder">
+        <i onclick="show()" class="fi fi-rr-bars-staggered"></i>
+        <div class="menuContainer" id="menuWrapper">
+          <span onclick="hide()">&Cross;</span>
+          <div class="menuWapper">
+            <a href="#home" class="active">home</a>
+            <a href="#menu">menu</a>
+            <a href="#services">services</a>
+            <a href="#about">about</a>
+            <a href="#review">review</a>
+            <a href="#order">order</a>
+          </div>
+        </div>
+
+        <!-- <div class="navbar-icons">
+          <div class="rating-container">
+            <img class="tooltip" src="rating.gif" alt="rating" />
+            <span class="tooltip-content">Rate Us</span>
+          </div>
+          <div class="sidebar" tabindex="-1" >
+          </div>
+        </div> -->
+      </div>
+      <!-- <div class="sidebar" id="sidebar">
+      </div> -->
+      <div class="sidbar" id="sidbar">
+        <span onclick="toggleback()">&Cross;</span>
+      </div>
+      <i onclick="toggle()" id="dot" class="fi fi-rr-menu-dots-vertical"></i>
+    </nav>
+    <section class="home" id="home">
+      <div class="container">
+        <div class="article">
+          <h1>Discover[Restaurant name]: <br /></h1>
+          <h2>Where Culinary Delights Meet Unforgettable Moments</h2>
+
+          <p>
+            Savor the Essence of Comfort and Joy as You wonder<br />
+            into a Gastronomic adventure, Elevating Dinning to to an artform
+            in<br />
+            This Haven for Food Enthusiasts
+          </p>
+        </div>
+        <div class="image-wrapper">
+          <div class="box">
+            <div class="icons">
+              <button>
+                <i class="fi fi-rr-heart"></i>
+              </button>
+              <button>
+                <i class="fi fi-rr-eye"></i>
+              </button>
+            </div>
+            <img src="pizza.jpg" alt="pizza" />
+            <h3>Pepperoni Pizza</h3>
+            <span>$9.59</span>
+            <a href="#" class="btn">Add to Cart</a>
+          </div>
+          <div class="box">
+            <div class="icons">
+              <button>
+                <i class="fi fi-rr-heart"></i>
+              </button>
+              <button>
+                <i class="fi fi-rr-eye"></i>
+              </button>
+            </div>
+            <img src="chicken.jpg" alt="chicken" />
+            <h3>Fried Chicken</h3>
+            <span>$7.99</span>
+            <a href="#" class="btn">Add to Cart</a>
+          </div>
+          <div class="box">
+            <div class="icons">
+              <button>
+                <i class="fi fi-rr-heart"></i>
+              </button>
+              <button>
+                <i class="fi fi-rr-eye"></i>
+              </button>
+            </div>
+            <img src="pasta.jpg" alt="pasta" />
+            <h3>Italian Pasta</h3>
+            <span>$3.99</span>
+            <a href="#" class="btn">Add to Cart</a>
+          </div>
+          <div class="box">
+            <div class="icons">
+              <button>
+                <i class="fi fi-rr-heart"></i>
+              </button>
+              <button>
+                <i class="fi fi-rr-eye"></i>
+              </button>
+            </div>
+            <img src="burger.jpg" alt="burger" />
+            <h3>The Executive Hamburger</h3>
+            <span>$4.99</span>
+            <a href="#" class="btn">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="menu" id="menu">
+      <p>we have various delicacies from 5 different continents</p>
+      <h2>OUR MENU</h2>
+      <h4>Main course</h4>
+      <div class="menu-image-wrapper">
+        <div class="main-course">
+          <div class="menu-wrapper">
+            <div class="box">
+              <img src="chicken and chips.jpg" alt="jollof" />
+              <h3>Chicken n'Chips</h3>
+              <span>$5.99</span>
+              <a href="#" class="btn">Add to Cart</a>
+            </div>
+            <div class="box">
+              <img src="groceries.jpg" alt="groceries" />
+              <h3>La Groceries</h3>
+              <span>$8.99</span>
+              <a href="#" class="btn">Add to Cart</a>
+            </div>
+            <div class="box">
+              <img src="steak.jpg" alt="steak" />
+              <h3>Steak Tartar</h3>
+              <span>$35.0</span>
+              <a href="#" class="btn">Add to Cart</a>
+            </div>
+            <div class="box">
+              <img src="rice.jpg" alt="rice" />
+              <h3>Party Jollof</h3>
+              <span>$8.99</span>
+              <a href="#" class="btn">Add to Cart</a>
+            </div>
+            <div class="box">
+              <img src="fish.jpg" alt="fish" />
+              <h3>Grilled Fish</h3>
+              <span>$6.99</span>
+              <a href="#" class="btn">Add to Cart</a>
+            </div>
+          </div>
+          <span id="showmore"> Show More </span>
+        </div>
+        <div class="desserts">
+          <h4>Desserts</h4>
+          <div class="menu-wrapper">
+            <div class="box">
+              <img src="strawberry-role.jpg" alt="strawberry-role" />
+              <h3>Aux fraises</h3>
+              <span>$4.49</span>
+              <a href="#" class="btn">Add to Cart</a>
+            </div>
+            <div class="box">
+              <img src="pie.jpg" alt="pie" />
+              <h3>Strawberry Pie</h3>
+              <span>$1.99</span>
+              <a href="#" class="btn">Add to Cart</a>
+            </div>
+            <div class="box">
+              <img src="chocolate-cake.jpg" alt="chocolate-cake" />
+              <h3>Chocolate Cake</h3>
+              <span>$2.99</span>
+              <a href="#" class="btn">Add to Cart</a>
+            </div>
+            <div class="box">
+              <img src="cheese-cake.jpg" alt="cheese-cake" />
+              <h3>Cheese Cake</h3>
+              <span>$3.99</span>
+              <a href="#" class="btn">Add to Cart</a>
+            </div>
+            <div class="box">
+              <img src="ice-cream.jpg" alt="ice-cream" />
+              <h3>Ice-cream</h3>
+              <span>$3.49</span>
+              <a href="#" class="btn">Add to Cart</a>
+            </div>
+          </div>
+          <span id="showmore"> showmore </span>
+        </div>
+      </div>
+    </section>
+    <section class="services" id="services">
+      <h2>We offer different types of services</h2>
+      <h4>.Dine-in</h4>
+      <h4>.Takeout</h4>
+      <h4>.Delivery</h4>
+      <h4>.Private Events</h4>
+      <h4>.Buffet</h4>
+      <h4>.Brunch/Lunch/Dinner specials</h4>
+      <h4>.Food Tastings</h4>
+      <h4>.Chef's Table</h4>
+      <h4>.Cooking Classes</h4>
+      <h4>.Wine Pairing</h4>
+      <span><a href="#" class="btn-2">More Info</a></span>
+      <img src="whole-chicken.jpg" alt="chicken" />
+
+      <div class="article-2">
+        <h3>
+          Our services section offers a wide range of culinary delights to
+          satisfy your taste buds. From delectable appetizers to mouthwatering
+          main courses and irresistible desserts, we strive to provide an
+          unforgettable dining experience. Our talented chefs use only the
+          finest ingredients to create dishes that are both visually stunning
+          and incredibly flavorful. Join us for a gastronomic journey like no
+          other and indulge in the art of food.
+        </h3>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <p>About Us?</p>
+      <h2>Why choose Us</h2>
+      <h3>Online food ordering for convenient home delivery.</h3>
+      <h3>Diverse menu options catering to various dietary preferences.</h3>
+      <h3>Customizable meal plans for personalized nutrition.</h3>
+      <h3>Catering services for special events and gatherings.</h3>
+      <h3>Weekly meal subscriptions for hassle-free dining.</h3>
+      <h3>Cooking classes and workshops to enhance culinary skills.</h3>
+      <h3>Seasonal menu updates to showcase fresh and local ingredients.</h3>
+      <h3>Gift cards for sharing the joy of good food with loved ones.</h3>
+      <h3>
+        Nutritional information and dietary guidelines for informed choices.
+      </h3>
+      <h3>Prompt customer support to address any queries or concerns.</h3>
+      <div class="button-wrapper">
+        <div class="box-2">
+          <img src="delivery-truck.gif" alt="delivery-truck" />
+          <p>Free Delivery</p>
+        </div>
+        <div class="box-2">
+          <img src="money-bag.gif" alt="payment" />
+          <p>Easy payments</p>
+        </div>
+        <div class="box-2">
+          <img src="support.gif" alt="delivery-truck" />
+          <p>24/7 Service</p>
+        </div>
+      </div>
+    </section>
+    <section class="review" id="review">
+      <p>Our Review</p>
+      <h2>What are customers saying?</h2>
+      <div class="article-container">
+        <div class="article-wrapper">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus
+            possimus illo odio veniam nihil ad unde, dolor quae error! Atque
+            magni esse recusandae eligendi earum suscipit deleniti nostrum
+            veritatis corporis provident odit ex nam, reprehenderit, minus eos
+            placeat omnis amet id a nobis expedita? Nihil cumque aliquid
+            voluptates autem dolor vel nemo laboriosam alias veniam
+            exercitationem. Possimus eos aperiam velit?
+          </p>
+        </div>
+        <div class="article-wrapper">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus
+            possimus illo odio veniam nihil ad unde, dolor quae error! Atque
+            magni esse recusandae eligendi earum suscipit deleniti nostrum
+            veritatis corporis provident odit ex nam, reprehenderit, minus eos
+            placeat omnis amet id a nobis expedita? Nihil cumque aliquid
+            voluptates autem dolor vel nemo laboriosam alias veniam
+            exercitationem. Possimus eos aperiam velit?
+          </p>
+        </div>
+        <div class="article-wrapper">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus
+            possimus illo odio veniam nihil ad unde, dolor quae error! Atque
+            magni esse recusandae eligendi earum suscipit deleniti nostrum
+            veritatis corporis provident odit ex nam, reprehenderit, minus eos
+            placeat omnis amet id a nobis expedita? Nihil cumque aliquid
+            voluptates autem dolor vel nemo laboriosam alias veniam
+            exercitationem. Possimus eos aperiam velit?
+          </p>
+        </div>
+        <div class="article-wrapper">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus
+            possimus illo odio veniam nihil ad unde, dolor quae error! Atque
+            magni esse recusandae eligendi earum suscipit deleniti nostrum
+            veritatis corporis provident odit ex nam, reprehenderit, minus eos
+            placeat omnis amet id a nobis expedita? Nihil cumque aliquid
+            voluptates autem dolor vel nemo laboriosam alias veniam
+            exercitationem. Possimus eos aperiam velit?
+          </p>
+        </div>
+        <div class="article-wrapper">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus
+            possimus illo odio veniam nihil ad unde, dolor quae error! Atque
+            magni esse recusandae eligendi earum suscipit deleniti nostrum
+            veritatis corporis provident odit ex nam, reprehenderit, minus eos
+            placeat omnis amet id a nobis expedita? Nihil cumque aliquid
+            voluptates autem dolor vel nemo laboriosam alias veniam
+            exercitationem. Possimus eos aperiam velit?
+          </p>
+        </div>
+        <div class="article-wrapper">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus
+            possimus illo odio veniam nihil ad unde, dolor quae error! Atque
+            magni esse recusandae eligendi earum suscipit deleniti nostrum
+            veritatis corporis provident odit ex nam, reprehenderit, minus eos
+            placeat omnis amet id a nobis expedita? Nihil cumque aliquid
+            voluptates autem dolor vel nemo laboriosam alias veniam
+            exercitationem. Possimus eos aperiam velit?
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="order" id="order">
+      <p>Place Your Order Now</p>
+      <h2>Quick and Easy</h2>
+      <div class="order-component">
+        <fieldset>
+          <label
+            >First Name
+            <input type="text" placeholder="Enter your First Name" required />
+          </label>
+
+          <label
+            >Last Name
+            <input type="text" placeholder="Enter your Last Name" required />
+          </label>
+          <label
+            >Phone number
+            <input
+              type="tel"
+              minlength="11"
+              placeholder="Enter Your Phone number"
+              required
+            />
+          </label>
+          <label
+            >Address
+            <textarea placeholder="Your address"> </textarea>
+          </label>
+        </fieldset>
+        <fieldset>
+          <label
+            >Order
+            <input type="text" placeholder="Enter your Order" required />
+          </label>
+
+          <label
+            >Any additions?
+            <input type="text" placeholder="E.g Drinks..." />
+          </label>
+          <label
+            >Number of item
+            <input
+              type="number"
+              min="1"
+              max="30"
+              placeholder="Enter the number of Order "
+              required
+            />
+          </label>
+          <label
+            >Description
+            <textarea placeholder="Any special requests?"></textarea>
+          </label>
+          <a class="submit">SUBMIT</a>
+        </fieldset>
+      </div>
+      <a href="#">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-arrow-up-circle"
+        >
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="16 12 12 8 8 12"></polyline>
+          <line x1="12" y1="16" x2="12" y2="8"></line>
+        </svg>
+      </a>
+    </section>
+    <footer>
+      <p>FOOTER.....</p>
+      <br />
+      <br />
+      <h4>&copy;2023 By FireBreather 2.0</h4>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

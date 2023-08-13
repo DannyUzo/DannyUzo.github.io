@@ -14,5 +14,5 @@ function toggle(){
 
 function toggleback(){
 
-    sidbar.style.right = "-15%";
+    sidbar.style.right = "-25%";
 }

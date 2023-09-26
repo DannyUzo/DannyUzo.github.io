@@ -482,6 +482,37 @@ footer h4 {
 
 
 
+@media only screen and (max-width:3280px) {
+  .about{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-content{
+  width: 100%;
+  padding: 10px;
+  line-height: 45px;
+  }
+  .about-content p{
+    font-size: 20px;
+    text-align: center;
+  }
+  .about small{
+    font-size: 15px;
+  }
+  .button-wrapper {
+    width: 100%;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+   align-items: center;
+  }
+}
+
 @media only screen and (max-width:1280px) {
   .about{
     width: 100%;
@@ -512,6 +543,8 @@ footer h4 {
    align-items: center;
   }
 }
+
+/* RESPOSIVENESS */
 @media only screen and (max-width: 1024px) {
   .menu-wrapper .box {
     width: 35%;
@@ -581,8 +614,6 @@ line-height: 45px;
  align-items: center;
 }
 }
-
-/* RESPOSIVENESS */
 .iconHolder i {
   display: none;
 }

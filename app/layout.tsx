@@ -1,0 +1,57 @@
+import type React from "react"
+import type { Metadata } from "next"
+import { ErrorBoundary } from "@/components/error-boundary"
+import { ThemeProvider } from "@/components/theme-provider"
+import { Toaster } from '@/components/ui/toaster';
+import "./globals.css"
+
+
+export const metadata: Metadata = {
+  title: "Uzodinma Daniel - Frontend Engineer | Modern Web Developer",
+  description:
+    "Frontend Engineer passionate about creating clean, responsive, and user-friendly web experiences. Specializing in React, Next.js, TypeScript, and modern web technologies.",
+  keywords: "Frontend Engineer, React Developer, Next.js, TypeScript, Web Developer, JavaScript, Abeokuta Nigeria",
+  authors: [{ name: "Uzodinma Daniel" }],
+  creator: "Uzodinma Daniel",
+  publisher: "Uzodinma Daniel",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://dannyuzo.vercel.app",
+    title: "Uzodinma Daniel - Frontend Engineer",
+    description: "Frontend Engineer passionate about creating clean, responsive, and user-friendly web experiences.",
+    siteName: "Uzodinma Daniel Portfolio",
+  },
+  icons: {
+    icon: [{ url: '/logo.svg', type: 'image/svg+xml' }],
+    shortcut: '/favicon.svg',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+}
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <html lang="en" suppressHydrationWarning>
+      <body className="antialiased">
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
+          <ErrorBoundary>{children}</ErrorBoundary>
+        </ThemeProvider>
+        <Toaster />
+      </body>
+    </html>
+  )
+}

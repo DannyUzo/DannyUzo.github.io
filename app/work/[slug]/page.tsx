@@ -6,7 +6,7 @@ import rehypeHighlight from "rehype-highlight"
 // import "highlight.js/styles/github-dark.css"
 import { resumeData } from "@/lib/resume-data"
 
-type Params = { slug: string }
+type Params = Promise<{ slug: string }>
 
 export async function generateStaticParams() {
   return resumeData.hardwareProjects
@@ -14,8 +14,9 @@ export async function generateStaticParams() {
     .map((project: any) => ({ slug: project.firmwareSlug })) ?? []
 }
 
-export default function FirmwarePage({ params }: { params: Params }) {
-  const post = getPostData(`hardware/${params.slug}`)
+export default async function FirmwarePage({ params }: { params: Params }) {
+  const { slug } = await params
+  const post = getPostData(`hardware/${slug}`)
 
   return (
     <main className="min-h-screen grain-surface text-foreground">

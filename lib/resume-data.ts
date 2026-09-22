@@ -1,11 +1,3 @@
-import XplicMode from "@/public/images/image.png"
-import Zuri from "@/public/images/zuriLogo.jpeg"
-import Nutec from "@/public/images/nutec.jpg"
-import Nuesa from "@/public/images/nuesa.png"
-import Gearsparks from "@/public/images/gearsparks_logo.jpg"
-import Mhetlabs from "@/public/images/Mhetlabs.png"
-import Platoons from "@/public/images/platoons.png"
-
 export const resumeData = {
   personalInfo: {
     name: "UZODINMA DANIEL",
@@ -34,7 +26,6 @@ export const resumeData = {
     // },
     {
       company: "GearSparks Consulting",
-      image: Gearsparks,
       position: "Forward Deployed Front-end Engineer",
       duration: "03/2026 - Present",
       location: "Lagos, Nigeria",
@@ -54,7 +45,6 @@ export const resumeData = {
     // },
     {
       company: "The Platoons Entertainment",
-      image: Platoons,
       position: "Front-end Developer",
       duration: "03/2026 - 05/2026 (Contract)",
       location: "Lagos, Nigeria",
@@ -64,7 +54,6 @@ export const resumeData = {
     },
     {
       company: "XplicitMode",
-      image: XplicMode,
       position: "Frontend Engineer",
       duration: "11/2024 – 09/2025",
       location: "Abuja, Nigeria",
@@ -74,7 +63,6 @@ export const resumeData = {
     },
     {
       company: "Nuesa Funaab",
-      image: Nuesa,
       position: "Lead Frontend Engineer & System Architect",
       duration: "07/2025 (contract)",
       location: "Abeokuta, Nigeria",
@@ -86,7 +74,6 @@ export const resumeData = {
   internships: [
     {
       company: "NUTEC-FUNAAB",
-      image: Nutec,
       position: "Frontend Engineering Intern",
       duration: "02/2024 - 06/2024",
       location: "Abeokuta, Nigeria",
@@ -96,7 +83,6 @@ export const resumeData = {
     },
     {
       company: "Zuri Internship(HNGx)",
-      image: Zuri,
       position: "Frontend Engineering Intern",
       duration: "09/2023 - 10/2023",
       location: "Remote, Nigeria",
